@@ -10,12 +10,19 @@
     // responsive menu
     $('body').on('click', '#menu', function (e) {
         e.preventDefault();
-        var selector = $("#global_nav, #global_header");
+        var selector = $('#global_nav, #global_header');
         // hide or show nav
         if (selector.hasClass('active')) {
             selector.removeClass('active');
         } else {
             selector.addClass('active');
         }
+    });
+    $('body').on('submit', '#signup', function(e) {
+        e.preventDefault();
+
+
+
+
     });
 })(jQuery);
