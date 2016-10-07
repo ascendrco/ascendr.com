@@ -1,0 +1,140 @@
+@charset "utf-8"
+@import "./_variables.sass"
+@import "./_mixins.sass"
+
+#home
+
+    main
+
+        &.row
+            background: transparent url(/img/sky-bg.jpg) no-repeat scroll center center
+            background-size: cover
+            height: 900px
+            position: relative
+            padding-top: 215px
+            text-align: center
+
+            h1
+                color: #fff
+                font-size: $font_size + 42
+                font-weight: 600
+                letter-spacing: -0.025em
+                line-height: 1
+                text-shadow: 0 2px 0 rgba(0,0,0,0.12)
+
+            h2
+                color: #fff
+                font-size: $font_size + 18
+                font-weight: 500
+                letter-spacing: -0.025em
+                line-height: 1
+                margin: 25px 0 50px
+                text-shadow: 0 2px 0 rgba(0,0,0,0.12)
+
+        form
+            @include clear
+            margin: 0 auto
+            width: 55%
+
+
+        label
+            color: #fff
+            display: block
+            font-family: $font_family_serif
+            font-weight: 700
+            letter-spacing: 0.05em
+            line-height: 1
+            margin-bottom: 10px
+            text-align: left
+            text-transform: uppercase
+
+        input
+            @include placeholder(#fff)
+            background: rgba(255, 255, 255, 0.35)
+            border: 1px solid #fff
+            border-radius: 5px
+            color: $blue
+            float: left
+            font-family: $font_family
+            font-size: $font_size + 6
+            font-style: italic
+            font-weight: 400
+            padding: 10px 17px
+            width: 64%
+
+            &:focus
+                border: 1px solid $teal
+                outline: none
+
+        small
+            background: transparent url(/img/down-icon.png) no-repeat scroll center bottom
+            background-size: 28px 28px
+            bottom: 20px
+            color: rgba(255, 255, 255, 0.66)
+            cursor: pointer
+            font-family: $font_family_serif
+            font-size: $font_size - 6
+            font-weight: 400
+            line-height: 1.2
+            letter-spacing: 0.05em
+            margin-left: -52px
+            left: 50%
+            position: absolute
+            padding-bottom: 35px
+            text-align: center
+            text-transform: uppercase
+
+        .cta
+            background: $teal
+            border-radius: 5px
+            float: left
+            font-size: $font_size + 6
+            padding: 11px 15px 12px
+            margin-left: 10px
+
+            &:hover
+                background: darken($teal, 5%)
+
+    .row
+
+        section
+
+            &.border-bottom
+                border-bottom: 1px solid $border_color
+                float: none
+                text-align: center
+                padding-bottom: 45px
+                width: 100%
+
+                h2, p
+                    margin: 0 auto
+                    width: 600px
+
+                h2
+                    margin-bottom: 20px
+
+            &.tiles
+                float: none
+                padding: 45px 0
+                width: 100%
+
+                .tile
+                    float: left
+                    padding: 4.5%
+                    text-align: center
+                    width: 41%
+
+                    img
+                        display: block
+                        height: 139px
+                        margin: 0 auto 20px
+                        width: 139px
+
+                    h3
+                        color: #333
+                        font-size: $font_size + 6
+                        font-weight: 600
+
+                    p
+                        color: #666
+                        font-size: $font_size + 2

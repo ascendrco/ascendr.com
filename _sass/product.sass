@@ -1,0 +1,66 @@
+@charset "utf-8"
+@import "./_variables.sass"
+@import "./_mixins.sass"
+
+#product
+
+    .product
+        overflow: hidden
+        height: 561px
+
+        .center
+            position: relative
+
+        section
+            float: left
+            margin-top: 175px
+            width: 45%
+
+        figure
+            float: none
+            height: 539px
+            left: -360px
+            position: absolute
+            top: 0
+            width: 860px
+
+            img
+                display: block
+                height: 539px
+                width: 860px
+
+        figure + section
+            float: right
+
+        section + figure
+            float: none
+            left: auto
+            right: -360px
+
+@media screen and (max-width: 1024px)
+
+    #product
+
+        .product
+            height: auto
+
+            section, figure, figure + section, section + figure
+                float: none
+                width: 100%
+
+            section
+                margin: 20px 0 0 0
+                text-align: center
+
+            figure
+                left: auto
+                right: auto
+                height: auto
+                position: static
+
+                img
+                    display: block
+                    height: auto
+                    margin: 0 auto
+                    max-width: 640px
+                    width: 100%

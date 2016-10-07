@@ -1,3 +1,46 @@
 ---
-layout: front
+layout: default
+title: Ascendr
+id: home
 ---
+
+<main class="row">
+    <div class="center smaller">
+        <h1>The #1 drone operations platform that helps you grow faster than ever.</h1>
+        <h2>Manage flights from start to finish, strengthen your team’s communication, and execute like a pro.</h2>
+        {% include _signup_form.erb %}
+        <small id="more">But wait,<br />there's more!</small>
+    </div>
+</main>
+{% include _companies.erb %}
+<article class="row">
+    <div class="center">
+        <section class="border-bottom">
+            <h2>Peace of mind for you, your team, and your clients</h2>
+            <p>Ascendr is designed to work for every person invested in the success of a drone flight—from the C-suite down to the Pilot in Command. And because regulatory compliance is not just a nice-to-have, Ascendr makes it simple to manage safe &amp; legal drone operations—even at scale.</p>
+        </section>
+        <section class="tiles">
+            <section class="tile">
+                <img src="/img/hp-icon-calendar.png" alt="Schedule Drone Teams" title="Schedule Drone Teams" />
+                <h3>Schedule Drone Teams</h3>
+                <p>Book flights at Mach II</p>
+            </section>
+            <section class="tile">
+                <img src="/img/hp-icon-tower.png" alt="Full Compliance" title="Full Compliance" />
+                <h3>Full Compliance</h3>
+                <p>Integrate operations into the National Airspace</p>
+            </section>
+            <section class="tile">
+                <img src="/img/hp-icon-forklift.png" alt="Equipment Management" title="Equipment Management" />
+                <h3>Equipment Management</h3>
+                <p>Advanced inventory tracking</p>
+            </section>
+            <section class="tile">
+                <img src="/img/hp-icon-graphs.png" alt="Metrics &amp; KPIs" title="Metrics &amp; KPIs" />
+                <h3>Metrics &amp; KPIs</h3>
+                <p>Measure what matters</p>
+            </section>
+        </section>
+    </div>
+</article>
+{% include _customer_quote.erb %}

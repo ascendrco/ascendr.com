@@ -1,0 +1,122 @@
+@charset "utf-8"
+@import "./_variables.sass"
+@import "./_mixins.sass"
+
+#try
+
+    .try
+
+        section
+            float: left
+            width: 45%
+
+        form, .success
+            background: #fff
+            border: 1px solid #ccc
+            border-radius: 5px
+            float: right
+            padding: 35px 40px
+            width: 40%
+
+            label
+                color: $blue
+                display: block
+                font-weight: 600
+                margin-bottom: 10px
+
+            input
+                background: #fff
+                border: 1px solid #bbb
+                border-radius: 2px
+                display: block
+                font-size: $font_size + 2
+                font-family: $font_family
+                margin-bottom: 20px
+                padding: 6px 13px 8px
+                width: 372px
+
+                &:focus
+                    border-color: $teal
+
+                &.error
+                    @include placeholder(lighten($red, 10%))
+                    background: lighten($red, 40%)
+                    color: red
+                    border-color: $red
+
+                    &:focus
+                        border-color: $red
+
+            .cta
+                font-size: $font_size + 10
+                margin-top: 20px
+                padding: 18px 0
+                width: 100%
+
+        .success
+            display: none
+            text-align: center
+
+            img
+                display: block
+                margin: 75px auto 20px
+                height: 136px
+                width: 136px
+
+            h1
+                color: $teal
+                font-size: $font_size + 42
+                font-weight: 600
+                letter-spacing: -0.025em
+                line-height: 1
+
+            h2
+                line-height: 1
+                font-size: $font_size + 18
+                margin: 20px 0 75px
+
+@media screen and (max-width: 1024px)
+
+    #try
+
+        .try
+
+            section, form, .success
+                display: block
+                float: none
+                width: 100%
+
+            .success
+                display: block
+
+            form
+                display: none
+
+            form, .success
+                box-sizing: border-box
+                margin-top: 40px
+                padding: 35px 40px
+                width: 100%
+
+                input
+                    box-sizing: border-box
+                    width: 100%
+
+                .cta
+                    display: block
+                    font-size: $font_size + 6
+                    margin: 30px auto 0
+                    max-width: 320px
+                    padding: 10px 0
+
+            .success
+
+                h1
+                    font-size: $font_size + 28
+
+                h2
+                    font-size: $font_size + 10
+                    margin-bottom: 40px
+
+                img
+                    margin: 40px auto 20px
