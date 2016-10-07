@@ -1,4 +1,4 @@
-<header {% if page.url == '/' %} class="transparent"{% endif %}>
+<header id="global_header" {% if page.url == '/' %} class="transparent"{% endif %}>
     <div class="center">
         <h1>
             <a href="/">
@@ -9,7 +9,7 @@
                 {% endif %}
             </a>
         </h1>
-        <nav>
+        <nav id="global_nav">
             <ul>
                 <li {% if page.url == "/product/" %} class="active" {% endif %}>
                     <a href="/product/">Product</a>
@@ -28,5 +28,6 @@
                 </li>
             </ul>
         </nav>
+        <button id="menu"></a>
     </div>
 </header>
