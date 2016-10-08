@@ -15,6 +15,13 @@
 
 (function($){
 
+    var main = $('main.row');
+
+    if (main.length) {
+        main.css('height', $(window).height() - parseInt(main.css('padding-top'), 10) - parseInt(main.css('padding-bottom'), 10) );
+    }
+
+
     // if query string and email field, set the field
     if ($.QueryString.email && $("#email").length) {
         // set value
