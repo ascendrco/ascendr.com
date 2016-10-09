@@ -26,6 +26,12 @@
     if ($.QueryString.email && $("#email").length) {
         // set value
         $("#email").val($.QueryString.email);
+        // scroll to form
+        if ($("#signup").length) {
+            $('html, body').animate({
+                scrollTop: $('#signup').offset().top
+            }, 500);
+        }
     }
 
     // more button on homepage
