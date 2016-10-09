@@ -1,30 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>{% if page.title %}{{ page.title }}{% else %}Ascendr{% endif %}</title>
-      <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{site.description}}{% endif %}" />
-      <link href="/favicon.png" rel="shortcut icon" type="image/x-icon" />
-      <link href='/css/styles.css' type="text/css" rel="stylesheet">
-    </head>
-    <body {% if page.id %}id="{{page.id}}"{% endif %}>
-        {% include _header.erb %}
-        {{ content }}
-        {% include _footer.erb %}
-    </body>
-    <!-- load fonts -->
-    <script>
-       (function(){
-           var f = document.createElement('link');
-           f.setAttribute("rel", "stylesheet");
-           f.setAttribute("href","https://cloud.typography.com/7300514/6392152/css/fonts.css");
-           f.setAttribute("type","text/css");
-           var head = document.getElementsByTagName('head')[0];
-           head.appendChild(f);
-       })();
-   </script>
+   <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>{% if page.title %}{{ page.title }}{% else %}Ascendr{% endif %}</title>
+     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{site.description}}{% endif %}" />
+     <link href="/favicon.png" rel="shortcut icon" type="image/x-icon" />
+     <link href="https://cloud.typography.com/7300514/6392152/css/fonts" type="text/css" rel="stylesheet" />
+     <link href='/css/styles.css' type="text/css" rel="stylesheet" />
+   </head>
+   <body {% if page.id %}id="{{page.id}}"{% endif %}>
+       {% include _header.erb %}
+       {{ content }}
+       {% include _footer.erb %}
+   </body>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
    <script src="/js/global.js"></script>
 </html>
