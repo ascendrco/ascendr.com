@@ -13,14 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Ascendr
+title: Ascendr | Drone Operations Management
 email: kurt@ascendr.com
 description: "The #1 drone operations platform that helps you grow faster than ever"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://example.com" # the base hostname & protocol for your site
 twitter_username: ascendr
 github_username:  skyout
-repository: skyout/ascendr.com
 
 # Build settings
 markdown: kramdown
