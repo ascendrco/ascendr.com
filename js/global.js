@@ -103,7 +103,7 @@
 
         if (errArr.length === 0) {
             $.ajax({
-                url: 'https://stg-api.ascendr.com/marketing/try',
+                url: 'https://api.ascendr.com/marketing/try',
                 jsonp: 'callback',
                 dataType: 'jsonp',
                 data: values,
