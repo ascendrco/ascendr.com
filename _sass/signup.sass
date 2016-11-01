@@ -1,0 +1,217 @@
+@charset "utf-8"
+@import "./_variables.sass"
+@import "./_mixins.sass"
+
+#signup
+
+    .questions
+        padding-bottom: 0
+
+        section
+            min-height: 200px
+            float: left
+            margin-left: 5%
+            margin-bottom: 40px
+            width: 30%
+
+            &.first
+                margin-left: 0
+
+        h2
+            font-size: $font-size + 4
+
+    .page-header
+        padding-bottom: 40px
+
+    .pricing
+        padding-top: 0
+
+        .offer
+            @include border-radius(5px)
+            border: 1px solid #ccc
+            float: left
+            margin: 0 0 0 20px
+            min-height: 200px
+            padding: 30px
+            width: 258px
+
+            h1
+                font-size: $font-size + 16
+                font-weight: 700
+                line-height: 1
+                margin-bottom: 20px
+
+            h2
+                color: $teal
+                font-size: $font-size
+                font-weight: 600
+                letter-spacing: -0.025em
+                margin-bottom: 10px
+
+            dl
+
+                dt
+                    color: $blue
+                    font-size: $font-size + 36
+                    font-weight: 500
+                    line-height: 1
+
+                dd
+                    color: #666
+
+            p
+                color: $blue
+                font-size: $font-size + 2
+                font-style: italic
+                margin: 20px 0
+                min-height: 100px
+                line-height: 1.2
+
+            .cta
+                display: block
+                font-size: $font-size + 6
+                padding: 8px 0 9px
+                text-align: center
+
+            small
+                color: #666
+                display: block
+                font-size: $font-size - 2
+                font-style: italic
+                letter-spacing: -0.025em
+                margin: 5px 0 20px
+
+
+            ul
+                color: $teal
+                font-size: $font-size - 2
+                list-style: disc outside none
+                margin-left: 20px
+
+            li
+                line-height: 1
+                font-size: $font-size
+
+                span
+                    color: $blue
+                    font-size: $font-size - 2
+                    vertical-align: 0
+
+            &:first-child
+                margin-left: 0
+
+            &:hover
+                border-color: darken(#ccc, 10%)
+
+            &.pro
+                h1, h2
+                    color: $teal
+
+                .cta
+                    background: $teal
+
+                    &:hover
+                        background: darken($teal, 5%)
+
+            &.business
+                h1
+                    color: $red
+
+            &.enterprise
+
+                h1
+                    color: $blue
+
+                dt
+                    font-size: $font-size + 36
+                    font-weight: 300
+                    letter-spacing: -0.05em
+
+                .cta
+                    background: $blue
+                    margin-bottom: 47px
+
+                    &:hover
+                        background: darken($blue, 5%)
+
+
+
+
+
+@media screen and (max-width: 1024px)
+
+    #signup
+
+        .questions
+            padding-bottom: 0
+
+            section
+                min-height: auto
+                float: left
+                margin-bottom: 40px
+                width: 45%
+
+                &:nth-child(even)
+                    margin-left: 10%
+
+                    &.first
+                        margin-left: 10%
+
+                &:nth-child(odd)
+                    margin-left: 0
+
+                    &.first
+                        margin-left: 0
+
+            h2
+                font-size: $font-size + 4
+
+        .pricing
+            padding-top: 0
+
+            .offer
+                box-sizing: border-box
+                float: none
+                margin: 0 auto 20px
+                max-width: 480px
+                text-align: center
+                width: 100%
+
+                &:first-child
+                    margin: 0 auto 20px
+
+                p
+                    min-height: auto
+                    margin-bottom: 40px
+
+                small
+                    text-align: center
+
+                .cta
+                    margin: 0 auto
+                    max-width: 320px
+
+                ul
+                    list-style: none
+
+@media screen and (max-width: 768px)
+
+    #signup
+
+        .questions
+            padding-bottom: 0
+
+            section
+                min-height: auto
+                float: none
+                width: 100%
+
+                &:nth-child(even), &:nth-child(odd)
+                    margin: 0 auto 40px
+
+                    &.first
+                        margin: 0 auto 40px
+
+
+            h2
+                font-size: $font-size + 4
