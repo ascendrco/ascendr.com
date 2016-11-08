@@ -19,7 +19,7 @@ description: "The #1 drone operations platform that helps you grow faster than e
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ascendr.com" # the base hostname & protocol for your site
 twitter_username: ascendr
-github_username:  skyout
+github_username:  ascendrco
 
 # Build settings
 markdown: kramdown
