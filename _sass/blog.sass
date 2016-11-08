@@ -1,0 +1,72 @@
+@charset "utf-8"
+@import "./_variables.sass"
+@import "./_mixins.sass"
+
+#blog
+
+    .page-header
+        padding-bottom: 0
+
+    .blog
+
+        ul
+            list-style: none
+
+        li
+            border-bottom: 1px solid #D8D8D8
+            border-top: 1px solid #D8D8D8
+            padding: 35px 0
+
+            h1
+
+                a
+                    color: $blue
+                    display: block
+                    font-size: $font_size + 12
+                    font-weight: 600
+                    line-height: 1.3
+
+                    &:hover
+                        color: darken($blue, 10%)
+                        text-decoration: none
+
+            small
+                color: #3498db
+                display: block
+                font-size: $font_size - 2
+                margin: 10px 0 20px
+                text-transform: capitalize
+
+            .divider
+                color: #CCC
+                margin: 0 5px
+                font-size: $font_size - 2
+                vertical-align: 1px
+
+            p
+                color: $text_color
+                font-size: $font_size + 2
+                line-height: $line_height
+
+                &:last-child
+                    margin-bottom: 0
+
+@media screen and (max-width: 767px)
+
+    #blog
+
+        .blog
+
+            ul
+                max-width: 100%
+
+            li
+                padding: 20px 0
+
+                h1
+
+                    a
+                        font-size: $font_size + 6
+
+                p
+                    font-size: $font_size

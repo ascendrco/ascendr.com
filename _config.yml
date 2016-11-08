@@ -25,4 +25,4 @@ github_username:  skyout
 markdown: kramdown
 sass:
     style: compressed
-permalink: pretty
+permalink: /blog/:title
