@@ -3,10 +3,10 @@ title: "Bringing a Drone Services Contractor onto your Construction Site"
 subtitle: "What Should You Ask For?"
 layout: post
 category: "construction"
-description: "It’s almost 2017.  Competition in construction is intensifying - not subsiding.  Like a young Jedi first learning to sense the Force, you can feel there is excess cost all around you – indeed, flowing through you."
+description: "It’s almost 2017.  Competition in construction is intensifying – not subsiding.  Like a young Jedi first learning to sense the Force, you can feel there is excess cost all around you – indeed, flowing through you."
 ---
 
-It’s almost 2017.  Competition in construction is intensifying - not subsiding.  Like a young Jedi first learning to sense the Force, you can feel there is excess cost all around you – indeed, flowing through you.  It’s impacting your P&L.  You’ve been hearing more and more about this ‘drone thing’ and want to see if it can help.  And after finding a local drone services provider who can speak your lingo, you’re faced with an obvious dilemma:  what specifically should I ask them to do for me?
+It’s almost 2017.  Competition in construction is intensifying – not subsiding.  Like a young Jedi first learning to sense the Force, you can feel there is excess cost all around you – indeed, flowing through you.  It’s impacting your P&L.  You’ve been hearing more and more about this ‘drone thing’ and want to see if it can help.  And after finding a local drone services provider who can speak your lingo, you’re faced with an obvious dilemma:  what specifically should I ask them to do for me?
 
 ### Stop Small Problems from Becoming Big Ones
 
