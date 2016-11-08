@@ -12,9 +12,7 @@ ruby RUBY_VERSION
 gem "jekyll", "3.2.1"
 
 # Minify HTML
-group :jekyll_plugins do
-  gem 'octopress-minify-html'
-end
+gem 'octopress-minify-html', group: :jekyll_plugins
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
