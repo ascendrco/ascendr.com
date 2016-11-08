@@ -17,7 +17,7 @@ title: Ascendr | Drone Operations Management
 email: kurt@ascendr.com
 description: "The #1 drone operations platform that helps you grow faster than ever"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://example.com" # the base hostname & protocol for your site
+url: "http://ascendr.com" # the base hostname & protocol for your site
 twitter_username: ascendr
 github_username:  skyout
 
@@ -26,3 +26,5 @@ markdown: kramdown
 sass:
     style: compressed
 permalink: /blog/:title
+gems:
+    - octopress-minify-html
