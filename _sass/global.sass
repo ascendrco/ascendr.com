@@ -274,7 +274,7 @@ strong
         float: left
         width: 40%
 
-    form
+    #try-ascendr
         @include clear
         float: right
         margin-top: 60px
@@ -290,29 +290,30 @@ strong
         margin-bottom: 10px
         text-transform: uppercase
 
-    input
-        background: #fff
-        border: 1px solid $border_color
-        border-radius: 5px
-        color: $blue
-        float: left
-        font-family: $font_family
-        font-size: $font_size + 6
-        font-style: italic
-        font-weight: 400
-        padding: 10px 17px
-        width: 65%
-
-        &:focus
-            border: 1px solid $teal
-            outline: none
+    // input
+    //     background: #fff
+    //     border: 1px solid $border_color
+    //     border-radius: 5px
+    //     color: $blue
+    //     float: left
+    //     font-family: $font_family
+    //     font-size: $font_size + 6
+    //     font-style: italic
+    //     font-weight: 400
+    //     padding: 10px 17px
+    //     width: 65%
+    //
+    //     &:focus
+    //         border: 1px solid $teal
+    //         outline: none
 
     .cta
         border-radius: 5px
         float: left
         font-size: $font_size + 6
         padding: 11px 15px 12px
-        margin-left: 10px
+        text-align: center
+        width: 300px
 
     h2
         color: $teal
@@ -447,7 +448,7 @@ strong
 
     .signup
 
-        section, form
+        section, #try-ascendr
             float: none
             margin: 0 auto
             max-width: 480px
@@ -456,18 +457,25 @@ strong
         section
             margin-bottom: 40px
 
-        input
-            box-sizing: border-box
-            display: block
-            float: none
-            max-width: 320px
-            width: 100%
+        label
+            font-size: $font_size - 2
+
+        // input
+        //     box-sizing: border-box
+        //     display: block
+        //     float: none
+        //     max-width: 320px
+        //     width: 100%
 
         .cta
+            box-sizing: border-box
             display: block
             float: none
             font-size: $font_size
             margin: 20px 0 0 0
+            max-width: 300px
+            width: 100%
+
 
     .quote
         text-align: center

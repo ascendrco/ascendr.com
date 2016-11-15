@@ -23,8 +23,6 @@ github_username:  ascendrco
 
 # Build settings
 env: production
-gems:
-    - octopress-minify-html
 markdown: kramdown
 permalink: /blog/:title
 sass:
