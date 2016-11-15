@@ -27,3 +27,5 @@ markdown: kramdown
 permalink: /blog/:title
 sass:
     style: compressed
+
+version: 1.0.0
