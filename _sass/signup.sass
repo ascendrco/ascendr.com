@@ -49,6 +49,10 @@
                 margin-bottom: 10px
 
             dl
+                @include clear
+
+                dd, dt
+                    float: left
 
                 dt
                     color: $blue
@@ -58,6 +62,8 @@
 
                 dd
                     color: #666
+                    margin: 25px 0 0 5px
+                    width: 100px
 
             p
                 color: $blue
@@ -102,6 +108,17 @@
 
             &:hover
                 border-color: darken(#ccc, 10%)
+
+            &.hobbyist
+
+                h1
+                    color: $blue
+
+                .cta
+                    background: $blue
+
+                    &:hover
+                        background: darken($blue, 5%)
 
             &.pro
                 h1, h2
