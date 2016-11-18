@@ -93,6 +93,7 @@
                 font-size: $font_size - 2
                 list-style: disc outside none
                 margin-left: 20px
+                min-height: 150px
 
             li
                 line-height: 1
@@ -120,7 +121,7 @@
                     &:hover
                         background: darken($blue, 5%)
 
-            &.pro
+            &.team
                 h1, h2
                     color: $teal
 
@@ -143,6 +144,11 @@
                     font-size: $font_size + 36
                     font-weight: 300
                     letter-spacing: -0.05em
+
+                dt, dd
+                    float: none
+                    margin: 0
+                    width: auto
 
                 .cta
                     background: $blue
@@ -210,6 +216,7 @@
 
                 ul
                     list-style: none
+                    min-height: 0
 
 @media screen and (max-width: 768px)
 
