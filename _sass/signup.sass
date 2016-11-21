@@ -26,140 +26,181 @@
     .pricing
         padding-top: 0
 
-        .offer
-            @include border-radius(5px)
-            border: 1px solid #ccc
-            float: left
-            margin: 0 0 0 20px
-            min-height: 200px
-            padding: 30px
-            width: 258px
+        .offers
+            display: none
 
-            h1
-                font-size: $font_size + 16
-                font-weight: 700
-                line-height: 1
-                margin-bottom: 20px
+        table
+            width: 100%
 
-            h2
-                color: $teal
-                font-size: $font_size
-                font-weight: 600
-                letter-spacing: -0.025em
-                margin-bottom: 10px
+        thead
 
-            dl
-                @include clear
-
-                dd, dt
-                    float: left
-
-                dt
-                    color: $blue
-                    font-size: $font_size + 36
-                    font-weight: 500
-                    line-height: 1
-
-                dd
-                    color: #666
-                    margin: 25px 0 0 5px
-                    width: 100px
-
-            p
-                color: $blue
-                font-size: $font_size + 2
-                font-style: italic
-                margin: 20px 0
-                min-height: 100px
-                line-height: 1.2
-
-            .cta
-                display: block
-                font-size: $font_size + 6
-                padding: 8px 0 9px
+            th
+                padding: 5px 20px
                 text-align: center
 
-            small
+                &:first-child
+                    padding: 5px 10px 22px 5px
+                    text-align: left
+                    vertical-align: bottom
+
+                &:last-child
+                    padding-right: 5px
+
+            h1
                 color: #666
-                display: block
-                font-size: $font_size - 2
-                font-style: italic
+                font-weight: 700
+                font-size: $font_size + 6
+                margin-bottom: 5px
                 letter-spacing: -0.025em
-                margin: 5px 0 20px
 
+            .contact
+                color: $blue
+                font-size: $font_size + 18
+                font-weight: 300
+                letter-spacing: -0.05em
 
-            ul
-                color: $teal
-                font-size: $font_size - 2
-                list-style: disc outside none
-                margin-left: 20px
-                min-height: 150px
-
-            li
-                line-height: 1
+            .currency
+                color: #666
                 font-size: $font_size
+                font-weight: 400
+                letter-spacing: -0.01em
 
-                span
+                strong
                     color: $blue
-                    font-size: $font_size - 2
-                    vertical-align: 0
+                    font-size: $font_size + 18
+                    font-weight: 600
+                    padding-right: 3px
 
-            &:first-child
-                margin-left: 0
+            .cta
+                border-radius: 5px
+                display: block
+                font-size: $font_size + 2
+                margin: 20px 0 10px
+                padding: 5px 17px 6px
 
-            &:hover
-                border-color: darken(#ccc, 10%)
-
-            &.hobbyist
-
-                h1
-                    color: $blue
+            .hobbyist
 
                 .cta
-                    background: $blue
+                    background: #666
 
                     &:hover
-                        background: darken($blue, 5%)
+                        background: lighten(#666, 10%)
 
-            &.team
-                h1, h2
+            .team
+
+                h1
                     color: $teal
 
                 .cta
                     background: $teal
 
                     &:hover
-                        background: darken($teal, 5%)
+                        background: lighten($teal, 10%)
 
-            &.business
+            .business
+
                 h1
                     color: $red
 
-            &.enterprise
+            .enterprise
 
                 h1
                     color: $blue
 
-                dt
-                    font-size: $font_size + 36
-                    font-weight: 300
-                    letter-spacing: -0.05em
-
-                dt, dd
-                    float: none
-                    margin: 0
-                    width: auto
-
                 .cta
                     background: $blue
-                    margin-bottom: 47px
 
                     &:hover
-                        background: darken($blue, 5%)
+                        background: lighten($blue, 10%)
 
+        tbody
 
+            tr
 
+                &.users
 
+                    td
+                        color: $blue
+                        font-size: $font_size + 2
+                        font-weight: 700
+
+                        &:first-child
+                            font-weight: 400
+
+                &.buttons
+
+                    td
+
+                        &:first-child
+                            padding: 5px 10px 22px 5px
+                            text-align: left
+                            vertical-align: bottom
+
+                    .cta
+                        border-radius: 5px
+                        display: block
+                        font-size: $font_size + 2
+                        margin: 20px 0 10px
+                        padding: 5px 17px 6px
+
+                    .hobbyist
+
+                        .cta
+                            background: #666
+
+                            &:hover
+                                background: lighten(#666, 10%)
+
+                    .team
+
+                        .cta
+                            background: $teal
+
+                            &:hover
+                                background: lighten($teal, 10%)
+
+                    .enterprise
+
+                        .cta
+                            background: $blue
+
+                            &:hover
+                                background: lighten($blue, 10%)
+
+                    &:hover
+                        background: none
+
+                &:hover
+
+                    td
+                        background: lighten($blue, 72.5%)
+
+            td
+                padding: 5px 20px
+                text-align: center
+                vertical-align: middle
+
+                &:first-child
+                    color: $blue
+                    font-size: $font_size + 2
+                    padding-left: 5px
+                    text-align: left
+
+                &:last-child
+                    padding-right: 5px
+
+            .ion-checkmark
+                color: $teal
+                font-size: $font_size + 2
+
+            .ion-android-close
+                color: #999
+                font-size: $font_size + 2
+
+        small
+            color: #666
+            font-size: $font_size - 2
+            font-style: italic
 
 @media screen and (max-width: 1024px)
 
@@ -192,31 +233,116 @@
         .pricing
             padding-top: 0
 
+            table
+                display: none
+
+            .offers
+                display: block
+
             .offer
+                @include border-radius(5px)
                 box-sizing: border-box
-                float: none
+                border: 1px solid #ccc
                 margin: 0 auto 20px
                 max-width: 480px
+                min-height: 200px
+                padding: 30px
                 text-align: center
                 width: 100%
 
-                &:first-child
-                    margin: 0 auto 20px
+                h1
+                    font-size: $font_size + 16
+                    font-weight: 700
+                    line-height: 1
+                    margin-bottom: 20px
+
+                h2
+                    color: $teal
+                    font-size: $font_size
+                    font-weight: 600
+                    letter-spacing: -0.025em
+                    margin-bottom: 10px
+
+                dl
+
+                    dt
+                        color: $blue
+                        font-size: $font_size + 36
+                        font-weight: 500
+                        line-height: 1
+
+                    dd
+                        color: #666
 
                 p
-                    min-height: auto
-                    margin-bottom: 40px
-
-                small
-                    text-align: center
+                    color: $blue
+                    font-size: $font_size + 2
+                    font-style: italic
+                    margin: 20px 0
+                    line-height: 1.2
 
                 .cta
-                    margin: 0 auto
-                    max-width: 320px
+                    display: block
+                    font-size: $font_size + 6
+                    padding: 8px 0 9px
+                    text-align: center
+
+                small
+                    color: #666
+                    display: block
+                    font-size: $font_size - 2
+                    font-style: italic
+                    letter-spacing: -0.025em
+                    margin: 5px 0 20px
+
 
                 ul
+                    color: $teal
                     list-style: none
-                    min-height: 0
+                    margin-left: 20px
+
+                li
+                    line-height: 1
+                    color: $blue
+                    font-size: $font_size - 2
+                    vertical-align: 0
+
+
+                &:hover
+                    border-color: darken(#ccc, 10%)
+
+                &.team
+                    h1, h2
+                        color: $teal
+
+                    .cta
+                        background: $teal
+
+                        &:hover
+                            background: darken($teal, 5%)
+
+                &.business
+
+                    h1
+                        color: $red
+
+                &.enterprise
+
+                    h1
+                        color: $blue
+
+                    dt
+                        font-size: $font_size + 36
+                        font-weight: 300
+                        letter-spacing: -0.05em
+
+                    .cta
+                        background: $blue
+                        margin-bottom: 47px
+
+                        &:hover
+                            background: darken($blue, 5%)
+
 
 @media screen and (max-width: 768px)
 
